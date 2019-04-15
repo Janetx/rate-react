@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Star from './Star'
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
             Edit <code>src/App.js</code> and save to reload.
             Welcome to reactjs!!!lalala
           </p>
+
           <a
             className="App-link"
             href="https://reactjs.org"
@@ -21,6 +23,9 @@ class App extends Component {
             Learn React
           </a>
         </header>
+        <Star />
+        <Star selected = {true} />
+        <Star onClick = {() => alert('the third star was clicked')} />
       </div>
     );
   }
